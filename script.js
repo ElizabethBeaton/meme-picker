@@ -23,11 +23,11 @@ function getMatchingCatsArray() {
     ).value;
     const isGif = gifsOnlyOption.checked;
 
-    const matchigCarsArray = catsData.filter(function (cat) {
-      return cat.emotionTag.includes(selectedEmtion);
+    const matchingCatsArray = catsData.filter(function (cat) {
+      return cat.emotionTags.includes(selectedEmotion);
     });
 
-    console.log(selectedEmotion);
+    console.log(matchingCatsArray);
   }
 }
 
